@@ -27,8 +27,8 @@ def main() -> None:
 
     while True:
         a, b = map(int, input("Please enter two number format (a b): ").split(" "))
-        s = input("Please enter the action sign (action signs +, -, /, *): ")
-        result = 0
+        s: str = input("Please enter the action sign (action signs +, -, /, *): ")
+        result: float = 0
         if s in signs:
             match s:
                 case "+": result = calculate.add(a, b)
