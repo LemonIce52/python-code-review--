@@ -4,8 +4,6 @@ import logging
 class Calculator:
 
     def __init__(self):
-        self.current_number = 0
-
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.INFO)
 
